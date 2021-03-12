@@ -1,0 +1,136 @@
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+ :root {
+    --pink: #F7F2F7;
+    --purple: #502050;
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --white: hsl(0, 0%, 100%);
+}
+
+#stars-div {
+    background-color: var(--pink);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.attribution {
+    margin-top: 35px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#star {
+    width: 15px;
+    height: auto;
+    margin: 0%;
+    padding: 0px;
+    margin-left: 1.2%;
+}
+
+#star-txt {
+    margin-top: 10px;
+    margin-left: 4%;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--purple);
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.bg-top,
+.bg-bottom {
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-top {
+    top: 0;
+    left: 0;
+}
+
+.bg-bottom {
+    bottom: 0;
+    right: 0;
+}
+
+#img-card {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+#name-section {
+    padding: 0px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#name {
+    color: var(--pink);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#feild {
+    color: var(--soft-pink);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#info {
+    color: var(--pink);
+    font-size: 14px;
+}
+
+#card {
+    padding: 0 3%;
+    background-color: var(--purple);
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+    transform: translate(0px, -10px);
+}
+
+#Top-left p {
+    color: var(--soft-pink);
+}
+
+@media only screen and (max-width:1131px) {
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg);
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:1132px) {
+    body {
+        background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
